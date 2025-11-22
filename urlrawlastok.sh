@@ -18,14 +18,12 @@ rm -r $b2
 
 a=$((a+500))
 #httpx -silent -l httpx.$b2 -t 500 -mr "REACT_.{300}" -er "REACT_.{300}" >>react
-httpx -silent -l url.$b2 -t 500 -mr "api.infusionsoft.com" >infusionsoft.$b2
-httpx -silent -l url.$b2 -t 500 -mr "a.klaviyo.com/api" >klaviyo.$b2
+httpx -silent -l url.$b2 -t 500 -mr "tms.govdelivery.com" >govdelivery.$b2
 
 
 
 
-httpx -silent -sr -srd infusionsofts -l infusionsoft.$b2
-httpx -silent -sr -srd klaviyos -l klaviyo.$b2
+httpx -silent -sr -srd govdelivery -l govdelivery.$b2
 echo "FINI $lsline total [$a]"
 rm url.$b2
 rm aws.$b2
